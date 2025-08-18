@@ -1,3 +1,25 @@
+:root {
+  --bg-color: #fff;
+  --text-color: #333;
+  --secondary-text: #666;
+  --card-bg: #fff;
+  --alt-bg: #f9f9f9;
+  --border-color: #ddd;
+  --highlight-color: #030213;
+  --link-hover-bg: #f0f0f0;
+}
+
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --secondary-text: #bbbbbb;
+  --card-bg: #1e1e1e;
+  --alt-bg: #181818;
+  --border-color: #333;
+  --highlight-color: #8ab4f8;
+  --link-hover-bg: #222;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,13 +31,21 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #fff;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-/* Header */
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -70,12 +100,10 @@ body {
   cursor: pointer;
 }
 
-/* Main content */
 .main-content {
   margin-top: 60px;
 }
 
-/* Hero Section */
 .hero {
   min-height: 90vh;
   display: flex;
@@ -175,7 +203,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* Section styles */
 .section {
   padding: 80px 20px;
   max-width: 1200px;
@@ -198,12 +225,9 @@ body {
 }
 
 .section.alt {
-  background: #f9f9f9;
-  margin: 0;
-  max-width: none;
+  background: var(--alt-bg);
 }
 
-/* About Section */
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -260,7 +284,6 @@ body {
   font-size: 14px;
 }
 
-/* Skills Section */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -314,7 +337,6 @@ body {
   color: #a16207;
 }
 
-/* Projects Section */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -381,7 +403,6 @@ body {
   font-size: 14px;
 }
 
-/* Contact Section */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -456,7 +477,6 @@ body {
   color: #030213;
 }
 
-/* Footer */
 .footer {
   background: #f9f9f9;
   border-top: 1px solid #ddd;
@@ -474,7 +494,6 @@ body {
   font-size: 14px;
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
   .mobile-menu-btn {
     display: block;
