@@ -348,7 +348,7 @@ const Projects: React.FC = () => {
                   View Code
                 </a>
                 <a
-                  href="https://ai-chatbot-k29q.onrender.com/"
+                  href="https://ai-chatbot-k29q.onrender.com/admin/characters"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary"
