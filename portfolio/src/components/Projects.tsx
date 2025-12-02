@@ -386,7 +386,7 @@ const Projects: React.FC = () => {
                   View Code
                 </a>
                 <a
-                  href="https://instagram-frontend-rho.vercel.app/signin"
+                  href="https://instagram-frontend-6dfx7d1sd-25s-projects-b89115e3.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary"
