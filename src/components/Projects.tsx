@@ -472,6 +472,49 @@ const Projects: React.FC = () => {
               </div>
             </div>
           </div>
+
+          <div className="project-card">
+            <img
+              src="https://images.unsplash.com/photo-1470252647378-9c22267e83de?w=400"
+              alt="Radio Globe"
+              className="project-image"
+            />
+            <div className="project-content">
+              <h3 className="project-title">Radio Globe</h3>
+              <p className="project-description">
+                An interactive 3D globe visualization that displays radio
+                stations from around the world. Users can rotate the globe,
+                click on stations to play music, and explore global radio
+                broadcasts.
+              </p>
+              <div className="project-tech">
+                <span className="tech-badge">HTML</span>
+                <span className="tech-badge">CSS</span>
+                <span className="tech-badge">JavaScript</span>
+                <span className="tech-badge">TypeScript</span>
+                <span className="tech-badge">React</span>
+                <span className="tech-badge">Three.js</span>
+              </div>
+              <div className="project-links">
+                <a
+                  href="https://github.com/HOP2B/radio-globe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-outline"
+                >
+                  View Code
+                </a>
+                <a
+                  href="https://radio-globe-bice.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
