@@ -9,8 +9,5 @@
     { "src": "/(.*\\.(js|css))", "dest": "/$1" },
     { "src": "/(.*\\.html)", "dest": "/$1" },
     { "src": "/(.*)", "dest": "/index.html" }
-  ],
-  "projectSettings": {
-    "rootDirectory": "."
-  }
+  ]
 }
