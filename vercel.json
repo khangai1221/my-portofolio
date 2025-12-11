@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "builds": [{ "src": "package.json", "use": "@vercel/static" }],
+  "routes": [
+    { "src": "/(.*\\.(js|css))", "dest": "/$1" },
+    { "src": "/(.*\\.html)", "dest": "/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ],
+  "projectSettings": {
+    "rootDirectory": "my-portfolio"
+  }
+}
