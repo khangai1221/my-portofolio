@@ -6,7 +6,8 @@
       "use": "@vercel/static-build",
       "config": {
         "distDir": "build",
-        "installCommand": "rm -rf node_modules package-lock.json && npm install"
+        "installCommand": "rm -rf node_modules package-lock.json && npm install",
+        "buildCommand": "NODE_OPTIONS=--openssl-legacy-provider npm run build"
       }
     }
   ],
@@ -15,8 +16,5 @@
       "src": "/(.*)",
       "dest": "/$1"
     }
-  ],
-  "env": {
-    "NODE_OPTIONS": "--openssl-legacy-provider"
-  }
+  ]
 }
