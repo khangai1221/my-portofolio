@@ -21,6 +21,12 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <div className="update-notice">
+        <p>
+          ⚠️ This portfolio is not updated since 2024 and will be updated soon
+          with more projects and fixed issues!
+        </p>
+      </div>
       <main className="main-content">
         <Hero />
         <About />
