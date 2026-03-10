@@ -3,12 +3,7 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build",
-        "installCommand": "rm -rf node_modules package-lock.json && npm install",
-        "buildCommand": "NODE_OPTIONS=--openssl-legacy-provider npm run build"
-      }
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
